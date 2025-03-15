@@ -30,10 +30,14 @@ const rule: TSESLint.RuleModule<"noJsxInTsx", []> = {
       },
       "Program:exit"(node) {
         if (!containsJSX) {
-          context.report({
-            node,
-            messageId: "noJsxInTsx",
-          });
+          const sourceCode = context.sourceCode;
+          const firstToken = sourceCode.getFirstToken(node);
+          if (firstToken) {
+            context.report({
+              loc: firstToken.loc,
+              messageId: "noJsxInTsx",
+            });
+          }
         }
       },
     };
