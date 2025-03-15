@@ -20,7 +20,7 @@ npm install eslint-plugin-no-tsx-without-jsx --save-dev
 {
   "plugins": ["no-tsx-without-jsx"],
   "rules": {
-    "no-tsx-without-jsx/enforce-jsx": "error"
+    "no-tsx-without-jsx/no-tsx-without-jsx": "error"
   }
 }
 ```
