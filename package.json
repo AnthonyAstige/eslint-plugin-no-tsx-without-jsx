@@ -1,0 +1,19 @@
+{
+  "name": "eslint-plugin-no-tsx-without-jsx",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyAstige/eslint-plugin-no-tsx-without-jsx.git"
+  },
+  "author": "Anthony Astige",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonyAstige/eslint-plugin-no-tsx-without-jsx/issues"
+  },
+  "homepage": "https://github.com/AnthonyAstige/eslint-plugin-no-tsx-without-jsx#readme",
+  "description": ""
+}
