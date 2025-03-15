@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,15 @@
     "url": "https://github.com/AnthonyAstige/eslint-plugin-no-tsx-without-jsx/issues"
   },
   "homepage": "https://github.com/AnthonyAstige/eslint-plugin-no-tsx-without-jsx#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/parser": "^8.26.1",
+    "@typescript-eslint/utils": "^8.26.1",
+    "eslint": "^9.22.0",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  }
 }
