@@ -25,6 +25,9 @@ const rule: TSESLint.RuleModule<"noJsxInTsx", []> = {
       JSXElement() {
         containsJSX = true;
       },
+      JSXFragment() {
+        containsJSX = true;
+      },
       "Program:exit"(node) {
         if (!containsJSX) {
           context.report({
