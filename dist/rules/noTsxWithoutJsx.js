@@ -14,7 +14,6 @@ const rule = {
     },
     create(context) {
         const filename = context.filename;
-        console.log(filename);
         if (!filename.endsWith(".tsx")) {
             return {};
         }
@@ -24,7 +23,6 @@ const rule = {
                 containsJSX = true;
             },
             "Program:exit"(node) {
-                console.log("abcd");
                 if (!containsJSX) {
                     context.report({
                         node,

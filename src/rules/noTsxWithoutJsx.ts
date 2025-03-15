@@ -15,7 +15,6 @@ const rule: TSESLint.RuleModule<"noJsxInTsx", []> = {
   },
   create(context) {
     const filename = context.filename;
-    console.log(filename);
     if (!filename.endsWith(".tsx")) {
       return {};
     }
