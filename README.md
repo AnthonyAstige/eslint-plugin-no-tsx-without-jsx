@@ -4,11 +4,7 @@ An ESLint plugin that enforces JSX presence in `.tsx` files to maintain clear fi
 
 ## Why?
 
-Using `.tsx` extensions for files without JSX can cause confusion and inconsistency. This plugin ensures that:
-
-- `.tsx` files contain JSX elements
-- Non-JSX files use the `.ts` extension
-- Codebase remains clear and maintainable
+Using `.tsx` extensions for files without JSX can cause confusion and inconsistency. This plugin ensures that `.tsx` files contain JSX elements
 
 ## Installation
 
